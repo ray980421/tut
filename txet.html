@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "zh">
+<head>
+  <meta charset="UTF-8">
+  <title>九九乘法</title>
+</head>
+<body>
+<?php
+echo '<table border="1" width="80%" cellspacing=" 5" cellpadding="5">';
+?>
+<h1>
+<script>
+<?php
+echo "var a = 0;";
+echo "var b = 0;";
+echo "while(a<9){";
+echo "a++;";
+echo 'document.write("<tr>");';
+echo " while(b<9){";
+echo "b++;";
+echo 'document.write("<th>"+a+"*"+b+"="+a*b+"</th>");';
+echo "}";
+echo 'document.write("</tr>");';
+echo "if(b=9){";
+echo "  b=0;";
+echo '  document.write("<br>");';
+echo "  }";
+echo "}";
+?>
+</script>
+</h1>
+</body>
+</html>
